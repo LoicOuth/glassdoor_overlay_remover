@@ -1,0 +1,19 @@
+{
+   "manifest_version": 3,
+   "name": "Glassdoor Overlay Remover",
+   "description": "Remove overlay on glassdoor to show opinion",
+   "version": "1.0",
+   "action": {
+      "default_icon": "logo.png"
+   },
+   "content_scripts": [
+      {
+         "matches": [
+            "https://www.glassdoor.fr/Avis/*"
+         ],
+         "js": [
+            "index.js"
+         ]
+      }
+   ]
+}
