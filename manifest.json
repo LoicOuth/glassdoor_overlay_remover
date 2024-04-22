@@ -9,7 +9,7 @@
    "content_scripts": [
       {
          "matches": [
-            "https://www.glassdoor.fr/Avis/*"
+            "https://www.glassdoor.fr/*"
          ],
          "js": [
             "index.js"

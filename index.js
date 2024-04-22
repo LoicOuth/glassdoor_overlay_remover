@@ -10,11 +10,14 @@ const remove = () => {
       noConnectedDiv.remove()
    }
 
-   const main = document.querySelector('main.css-yaeagj')
+   const main = document.getElementsByTagName('main')
 
-   if (main) {
-      main.style.height = '100vh'
-      main.style.overflow = 'auto'
+   if (main.length) {
+      for (let index = 0; index < main.length; index++) {
+         const element = main[index]
+         element.style.height = '100vh'
+         element.style.overflow = 'auto'
+      }
    }
 }
 
